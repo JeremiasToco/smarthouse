@@ -16,7 +16,7 @@
                 @foreach($users as $user)
                     <tr>
                         <td>000{{$user->id}}</td>
-                        <td>000{{$user->name}}</td>
+                        <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->level}}</td>
                         <td>{{Date("d-m-Y H:m:s",strtotime($user->created_at))}}</td>

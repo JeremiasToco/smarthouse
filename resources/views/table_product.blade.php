@@ -18,6 +18,7 @@
                     <th>Marca</th>
                     <th>Preço</th>
                     <th>Série</th>
+                    <th>Estado</th>
                     <th>Data de criação</th>
                     <th>Opções</th>
                 </tr>
@@ -30,6 +31,7 @@
                         <td>{{$product->mark}}</td>
                         <td>{{number_format($product->price,2,",",".")}} Kz</td>
                         <td>{{$product->serial}}</td>
+                        <td>{{$product->status}}</td>
                         <td>{{Date("d-m-Y H:m:s",strtotime($product->created_at))}}</td>
                         <td>
                             <a href="{{route('edit.product',$product->id)}}"><img style="width: 30px;" class="mr-2" src="/img/Icons/edit.png"></a>
